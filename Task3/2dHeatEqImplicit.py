@@ -83,6 +83,7 @@ for t in range(tnum):
             t1imp[i, j] = S[k]
 
     pcolor(x / 1000, y / 1000, t1imp)
-    show()
 
     t0imp = t1imp[:]
+
+show()
