@@ -74,6 +74,7 @@ for t in range(tnum):
                 L[k, k + ynum] = -kappa / xstep ** 2
                 L[k, k - 1] = -kappa / ystep ** 2
                 L[k, k + 1] = -kappa / ystep ** 2
+
                 L[k, k] = 1 / dt + 2 * kappa / xstep ** 2 + 2 * kappa / ystep ** 2
                 R[k, 0] = t0imp[i, j] / dt
     S = np.linalg.solve(L, R)

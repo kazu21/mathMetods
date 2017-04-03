@@ -26,12 +26,6 @@ dt    Constant mesh spacing in t.
 
 
 def solver_FE_simple():
-    """
-    Simplest expression of the computational algorithm
-    using the Forward Euler method and explicit Python loops.
-    For this method F <= 0.5 for stability.
-    """
-
     L = 1.
     a = 1
     T = 0.1
@@ -63,6 +57,5 @@ def solver_FE_simple():
         if n % 10 == 0:
             plot(x, u)
     show()
-
 
 solver_FE_simple()
